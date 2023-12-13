@@ -18,7 +18,7 @@ import java.util.stream.Stream;
 @Service
 public class RecipeService {
 
-    @Value("${dummy.json}")
+    @Value("${dummy.json.path}")
     private String filePath;
 
 
