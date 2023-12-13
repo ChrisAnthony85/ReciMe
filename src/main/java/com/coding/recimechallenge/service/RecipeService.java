@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -33,7 +34,9 @@ public class RecipeService {
         File file = ResourceUtils.getFile(("classpath:" + filePath));
         List<Recipe> recipes = Arrays.asList(objectMapper.readValue(file, Recipe[].class));
         return recipes.stream()
-                .filter(Recipe::isTrending).toList();
+                .filter(Recipe::isTrending)
+                .sorted(Comparator.comparing(Recipe::getPosition))
+                .toList();
     }
 
     public List<Recipe> getFilteredTrendingRecipes(String difficulty) {
