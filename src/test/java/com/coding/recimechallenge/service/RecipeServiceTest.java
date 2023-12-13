@@ -1,5 +1,6 @@
 package com.coding.recimechallenge.service;
 
+import com.coding.recimechallenge.exception.FilterNotFoundException;
 import com.coding.recimechallenge.exception.InvalidFilterValueException;
 import com.coding.recimechallenge.model.Difficulty;
 import com.coding.recimechallenge.model.Recipe;
@@ -9,9 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
+import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
 @TestPropertySource(locations="classpath:application-test.properties")
@@ -93,5 +97,31 @@ class RecipeServiceTest {
         Assertions.assertTrue(isSorted(recipes));
     }
 
+    @Test
+    void whenGetFilteredRecipes_mixed_thenReturnSorted() throws IOException, InvalidFilterValueException {
+        List<Recipe> recipes = service.getFilteredTrendingRecipes("EASY,mediuM,");
+        Assertions.assertEquals(7, recipes.size());
+        Assertions.assertTrue(isSorted(recipes));
+        Assertions.assertTrue(recipes.stream().allMatch(r -> r.getDifficulty() != Difficulty.HARD));
+    }
 
+    @Test
+    void whenGetFilteredMissing_thenException() {
+        FilterNotFoundException thrown = assertThrows(
+                FilterNotFoundException.class, () -> {
+                    service.getFilteredTrendingRecipes("");
+                }
+        );
+        Assertions.assertEquals("Required parameter <difficulty> missing.", thrown.getMessage());
+    }
+
+    @Test
+    void whenGetFilteredInvalid_thenException() {
+        InvalidFilterValueException thrown = assertThrows(
+                InvalidFilterValueException.class, () -> {
+                    service.getFilteredTrendingRecipes("a,xy,z");
+                }
+        );
+        Assertions.assertEquals("Invalid input for difficulty parameter.", thrown.getMessage());
+    }
 }

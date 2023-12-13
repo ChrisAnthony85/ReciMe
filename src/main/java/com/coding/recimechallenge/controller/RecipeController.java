@@ -17,7 +17,6 @@ import java.util.List;
 @RequestMapping(value="/recipes")
 public class RecipeController {
 
-
     private RecipeService service;
 
     @Autowired

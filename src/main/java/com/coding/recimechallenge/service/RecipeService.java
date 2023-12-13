@@ -37,9 +37,9 @@ public class RecipeService {
                 .toList();
     }
 
-    public List<Recipe> getFilteredTrendingRecipes(String difficulty) throws FilterNotFoundException, IOException, InvalidFilterValueException {
+    public List<Recipe> getFilteredTrendingRecipes(String difficulty) throws IOException, InvalidFilterValueException {
         if(difficulty.isBlank() || difficulty.isEmpty()) {
-            throw new FilterNotFoundException("Required parameter difficulty missing.");
+            throw new FilterNotFoundException("Required parameter <difficulty> missing.");
         }
         //Store the difficulty enum as a list
         List<String> difficultyTypes = Stream.of(Difficulty.values())
@@ -54,7 +54,7 @@ public class RecipeService {
         //throw exception if filter:required is empty or invalid
         if(difficultyFilters.isEmpty()) {
             //throw exception -> bad request
-            throw new InvalidFilterValueException("Required parameter difficulty missing.");
+            throw new InvalidFilterValueException("Invalid input for difficulty parameter.");
         }
 
         List<Recipe> recipes = getRecipesDummyData();

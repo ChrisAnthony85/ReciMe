@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "5e251327-5616-43f7-819d-24f098602444",
+		"name": "1. Recime",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2593676"
+	},
+	"item": [
+		{
+			"name": "all trending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trending filtered - mixed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending?difficulty=easy,hard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "easy,hard"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trending filtered EASY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending?difficulty=easy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "easy"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trending filtered medium",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending?difficulty=medium",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "medium"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trending filtered Hard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending?difficulty=hard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "hard"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trending filtered missing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending?difficulty=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trending filtered invalid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending?difficulty=a,b,c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "a,b,c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trending filtered valid + invalid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending?difficulty=easy,a,b,c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "easy,a,b,c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trending filtered valid, all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/recipes/trending?difficulty=easy,medium,hard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipes",
+						"trending"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "easy,medium,hard"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
