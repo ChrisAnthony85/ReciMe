@@ -1,6 +1,5 @@
 package com.coding.recimechallenge.controller;
 
-import com.coding.recimechallenge.exception.FilterNotFoundException;
 import com.coding.recimechallenge.exception.InvalidFilterValueException;
 import com.coding.recimechallenge.model.Recipe;
 import com.coding.recimechallenge.service.RecipeService;
