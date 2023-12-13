@@ -1,5 +1,7 @@
 package com.coding.recimechallenge.controller;
 
+import com.coding.recimechallenge.exception.FilterNotFoundException;
+import com.coding.recimechallenge.exception.InvalidFilterValueException;
 import com.coding.recimechallenge.model.Recipe;
 import com.coding.recimechallenge.service.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +31,7 @@ public class RecipeController {
     }
 
     @GetMapping(value = "/trending", params = "difficulty")
-    List<Recipe> getFilteredTrendingRecipes(@RequestParam String difficulty) {
+    List<Recipe> getFilteredTrendingRecipes(@RequestParam String difficulty) throws IOException, InvalidFilterValueException {
         return service.getFilteredTrendingRecipes(difficulty);
     }
 
