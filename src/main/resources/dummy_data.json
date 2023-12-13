@@ -1,0 +1,162 @@
+[
+  {
+    "name" : "Trendy Vegan Burger",
+    "isTrending" : true,
+    "difficulty" : "EASY",
+    "position" : 10,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Chicken Burger",
+    "isTrending" : true,
+    "difficulty" : "MEDIUM",
+    "position" : 9,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Beef Burger",
+    "isTrending" : true,
+    "difficulty" : "HARD",
+    "position" : 8,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Breakfast Burger",
+    "isTrending" : true,
+    "difficulty" : "EASY",
+    "position" : 7,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Cheesy Burger",
+    "isTrending" : true,
+    "difficulty" : "MEDIUM",
+    "position" : 6,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Spicy Burger",
+    "isTrending" : true,
+    "difficulty" : "HARD",
+    "position" : 5,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Quick Burger",
+    "isTrending" : true,
+    "difficulty" : "EASY",
+    "position" : 4,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Turkey Burger",
+    "isTrending" : true,
+    "difficulty" : "MEDIUM",
+    "position" : 3,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Tuna Burger",
+    "isTrending" : true,
+    "difficulty" : "HARD",
+    "position" : 2,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Trendy Mushroom Burger",
+    "isTrending" : true,
+    "difficulty" : "EASY",
+    "position" : 1,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Vegan Burger",
+    "isTrending" : false,
+    "difficulty" : "MEDIUM",
+    "position" : 20,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Chicken Burger",
+    "isTrending" : false,
+    "difficulty" : "HARD",
+    "position" : 19,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Beef Burger",
+    "isTrending" : false,
+    "difficulty" : "EASY",
+    "position" : 18,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Tuna Burger",
+    "isTrending" : false,
+    "difficulty" : "MEDIUM",
+    "position" : 17,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Difficult Burger",
+    "isTrending" : false,
+    "difficulty" : "HARD",
+    "position" : 16,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Easy Burger",
+    "isTrending" : false,
+    "difficulty" : "EASY",
+    "position" : 15,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Turkey Burger",
+    "isTrending" : false,
+    "difficulty" : "MEDIUM",
+    "position" : 14,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Veggie Burger",
+    "isTrending" : false,
+    "difficulty" : "HARD",
+    "position" : 13,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Veggie Burger",
+    "isTrending" : false,
+    "difficulty" : "EASY",
+    "position" : 12,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  },
+  {
+    "name" : "Small Burger",
+    "isTrending" : false,
+    "difficulty" : "MEDIUM",
+    "position" : 11,
+    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg",
+    "description": "Dummy description - could be a summary, instructions, or anything..."
+  }
+]

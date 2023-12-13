@@ -1,4 +1,7 @@
-package com.coding.recimechallenge;
+package com.coding.recimechallenge.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.beans.factory.annotation.Value;
 
 public class Recipe {
 
@@ -23,6 +26,8 @@ public class Recipe {
         this.name = name;
     }
 
+
+    @JsonProperty("isTrending")
     public boolean isTrending() {
         return isTrending;
     }

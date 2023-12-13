@@ -1,4 +1,4 @@
-package com.coding.recimechallenge;
+package com.coding.recimechallenge.model;
 
 public enum Difficulty {
     EASY,
